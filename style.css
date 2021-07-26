@@ -56,47 +56,119 @@ section.image {
   text-align: center;
   font-size: 1.7rem;
   word-spacing: 3px;
-  letter-spacing: 2px;  
+  letter-spacing: 2px;
   margin-bottom: 20px;
 }
 
 .information .title span {
-  color: hsl(277, 64%, 61%);  
+  color: hsl(277, 64%, 61%);
 }
 
-.information .description{
-  font-family: 'Inter', sans-serif;
-  color:hsla(0, 0%, 100%, 0.75);
+.information .description {
+  font-family: "Inter", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
   text-align: center;
-  opacity: .6;
+  opacity: 0.6;
   line-height: 1.5;
   word-spacing: -2px;
 }
 
-.numbersInformation{
+.numbersInformation {
   padding-top: 10%;
   /* background-color: green; */
   width: 100%;
   height: auto;
-  display:grid;
+  display: grid;
   grid-template-rows: 1fr 1fr 1fr;
 }
 
-.contentInformation{
+.contentInformation {
   /* background-color:blue; */
-  display:flex;
-  align-items:center;
-  flex-direction:column;
-  margin-bottom:10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
 }
 
-.contentInformation h1{
-  color:hsla(0, 0%, 100%, 0.75);
-  font-family: 'Inter', sans-serif;
+.contentInformation h1 {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Inter", sans-serif;
 }
-.contentInformation p{
+.contentInformation p {
   text-transform: uppercase;
-  font-family: 'Lexend Deca', sans-serif;
-  color:hsla(0, 0%, 100%, 0.6);
-  opacity:.6 ;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.6);
+  opacity: 0.6;
+}
+
+/*       DESKTOP VERSION        */
+@media screen and (min-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .all {
+    width: 65rem;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .image {
+    width: 45%;
+    border-radius: 0 10px 10px 0;
+
+  }
+  .image img { 
+    border-radius: 0 10px 10px 0;
+  }
+  .image::before {
+    border-radius: 0 10px 10px 0;
+
+  }
+  .texts {
+    width: 55%;
+    padding: 6% 8%;
+  }
+
+  .information .title {
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  
+  .information .description {
+    text-align: left;
+    font-size:.9rem;
+  }
+  .description{
+    padding: 0 10% 0 0;
+  }
+
+  .numbersInformation {
+    padding-top: 20%;
+    /* background-color: green; */
+    width: 90%;
+    height: auto;
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-between;
+  }
+
+  .contentInformation h1{
+    width: 100%;    
+    color:hsl(0, 0%, 100%);
+  }
+  .contentInformation:last-child h1{ 
+    /* background-color:green; */
+    text-align: center;
+  }
+
+
+
+
+
+
 }
